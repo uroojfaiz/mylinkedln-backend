@@ -27,6 +27,11 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "Kaarwan API is running" });
 });
 
+
+app.get("/api/health", (req, res) => {
+  res.json({ status: "Kaarwan API is running" });
+});
+
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/connections", require("./routes/connectionRoutes"));
